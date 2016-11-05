@@ -24,3 +24,7 @@ Developed on the basis of <a href="https://gist.github.com/daltonrooney/1737887"
       b) gallery-image (wpcf-gallery-image) - A REPEATING custom field for uploading gallery images. In Types, you must select "allow multiple instances of this field" when creating the field.
 3. Bootstrap 3+ - Not necessarily a requirement, but the form includes classes to provide better display with Bootstrap.
 4. JQuery - Should be enabled on Wordpress anyways
+<strong>5. If you will be uploading many images, you may have to adjust these settings in your server's PHP ini file:</strong>
+      a) max_file_uploads - A limit on number of files that can be uploaded at once
+      b) max_execution_time - A limit on the time spent doing a task. In this case, uploading the files and creating the post
+      c) upload_max_filesize - Total upload size
